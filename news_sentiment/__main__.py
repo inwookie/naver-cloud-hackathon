@@ -27,13 +27,12 @@ def main(args):
 
     sentiment_items = list(collection.find(
         {'sentiment': {'$exists': False}, 'date': {'$gte': target_date['date_st'], '$lte': target_date['date_end']}}, {'_id': False}))
-    # print(summary_items)
 
-    # =====Summary=======
+    # =====Sentiment=======
     for item in sentiment_items:
         if 300 < len(item['summary']) < 1000:
             result = sentiment(txt=item['summary'], client_id=sentiment_api_info['client_id'],
-                               client_secret=sentiment_api_info['client_secret']).replace('</b>', "").replace('<b>', "") or item['description'].replace('</b>', "").replace('<b>', "")
+                               client_secret=sentiment_api_info['client_secret']).replace('</b>', "").replace('<b>', "")
         else:
             result = 'null'
 
