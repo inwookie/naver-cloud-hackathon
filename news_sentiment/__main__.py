@@ -30,9 +30,9 @@ def main(args):
 
     # =====Sentiment=======
     for item in sentiment_items:
-        if 300 < len(item['summary']) < 1000:
+        if len(item['summary']) < 1000:
             result = sentiment(txt=item['summary'], client_id=sentiment_api_info['client_id'],
-                               client_secret=sentiment_api_info['client_secret']).replace('</b>', "").replace('<b>', "")
+                               client_secret=sentiment_api_info['client_secret'])
         else:
             result = 'null'
 
@@ -69,14 +69,14 @@ def cal_datetime_utc(before_date, timezone='Asia/Seoul'):
 
 
 def sentiment(txt, client_id, client_secret):
-    # '''
-    # 텍스트 입력받아서 sentiment 판별 - clova sentiment api
-    # :param: text 요약할 텍스트
-    # :param: client_id api 사용시 필요한 client_id
-    # :param: client_secret api 사용시 필요한 client_secret
-    # :return: sentiment정보
-    # :rtype: dict
-    # '''
+    '''
+    텍스트 입력받아서 sentiment 판별 - clova sentiment api
+    :param: text 요약할 텍스트
+    :param: client_id api 사용시 필요한 client_id
+    :param: client_secret api 사용시 필요한 client_secret
+    :return: sentiment정보
+    :rtype: dict
+    '''
 
     headers = {'X-NCP-APIGW-API-KEY-ID': client_id,
                'X-NCP-APIGW-API-KEY': client_secret,
