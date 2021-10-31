@@ -10,7 +10,7 @@ def main(args):
     # name 이라는 키워드 인자(argument,arg) 를 가져옴. 없으면 World 로 대신함
     keywords = args.get('keywords', ['경제', '주식'])
     # 뉴스 갯수 50개로 설정 - 인자가 없으면 50으로 설정
-    display_num = args.get('display_num', 50)
+    display_num = args.get('display_num', 100)
 
     # place 라는 키워드 인자(argument,arg) 를 가져옴. 없으면 Naver 로 대신함
     client_id = args.get('client_id')
