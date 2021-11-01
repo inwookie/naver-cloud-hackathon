@@ -74,11 +74,11 @@ def send_sentiments():
         sentiment = data['dailySentiment']
         color = ''
         if sentiment == 'positive':
-            color = 'blue'
+            color = '#799fcb'
         elif sentiment == 'neutral':
-            color = 'green'
+            color = '#9bd0b7'
         else:
-            color = 'red'
+            color = '#f9665e'
 
         sentiment_data = {'title': sentiment, 'start': date,
                           'color': color}
