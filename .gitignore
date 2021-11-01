@@ -4,4 +4,4 @@ venv
 testing.py
 main.css
 main.js
-app.py
+config.json
