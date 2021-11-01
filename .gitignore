@@ -2,3 +2,5 @@ venv
 *.zip
 *.DS_Store
 testing.py
+main.css
+main.js
