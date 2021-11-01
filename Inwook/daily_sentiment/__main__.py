@@ -16,9 +16,8 @@ def main(args):
     collection = db[db_info['collection_name']]
     collection_new = db[db_info['collection_name_new']]
 
-    # =====Add Date field to DB if not exist=======
-    collection.update_many({'date': {'$exists': False}}, [
-        {'$set': {'date': {"$toDate": "$pubDate"}}}])
+    # =====Delete Date field to DB if null=======
+    collection.delete_many({'sentiment': "null"})
 
     # =====Read from Date=======
     target_date = cal_datetime(before_date)
