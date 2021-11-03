@@ -1,8 +1,8 @@
 # DailyMotion
-|home|calendar|
+|Home|Calendar|
 |----|----|
 |<img src="https://github.com/LIMM036/my_news_webpage/blob/master/images/home.png">|<img src="https://github.com/LIMM036/my_news_webpage/blob/master/images/calendar.png">|
-|news|contact|
+|News|Contact|
 |<img src="https://github.com/LIMM036/my_news_webpage/blob/master/images/news.png">|<img src="https://github.com/LIMM036/my_news_webpage/blob/master/images/contact.png">|
 
 ## 1. DailyMotion 이란?
