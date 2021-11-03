@@ -15,6 +15,9 @@
 
 ## 3. 서버
 - Naver Cloud Flatform에서 서버를 대여하여 사용 [https://www.ncloud.com/product/compute/server]
+- Micro server / ubuntu-18.04 / 2vCPU, 4GB Mem, 50GB Disk
+- Mongodb를 사용하여 데이터 관리
+- flask를 사용한 웹 서버
 
 
 ## 4. 데이터 수집 / 가공  
@@ -25,6 +28,7 @@
 
   1. 뉴스 수집  
   - Naver news searching api 사용 [https://developers.naver.com/docs/serviceapi/search/news/news.md]
+  - [ title, originallink, link, description, pubDate ] 수집
 
   2. 뉴스 본문 내용 수집  
   - 수집한 url을 통해 뉴스의 본문을 수집한다.
