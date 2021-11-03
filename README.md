@@ -7,6 +7,8 @@
 
 ## 1. DailyMotion 이란?
 
+- Daily + emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관련된 뉴스의 sentiment 분석을 통해 하루하루의 경제의 sentiment를 달력에 뉴스와 함께 보여준다.
+
 ## 2. 구성
 
 ![](https://github.com/LIMM036/my_news_webpage/blob/master/images/configuration.png)
