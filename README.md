@@ -2,7 +2,6 @@
 
 ![](preview/home.png)
 
-[Project Link](http://dailymotion.ml)
 
 ## 1. DailyMotion 이란
 
